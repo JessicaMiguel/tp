@@ -12,7 +12,7 @@
 int main(int argc, char* argv[])
 {
     fflush(stdin);
-    unsigned short int protocol_type = 0x0800;
+    unsigned short int protocol_type = 0x1234;
     short int sock_desc=0;
 
     if ( (sock_desc = socket(AF_PACKET, SOCK_RAW, htons(protocol_type))) < 0)
